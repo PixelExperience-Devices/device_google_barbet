@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="config_compensation_images">
+        <item>@drawable/b9_compensation_image_10k</item>
+        <item>@drawable/b9_compensation_image_30k</item>
+    </array>
+    <array name="config_compensation_thresholds">
+        <item>10000.0</item>
+        <item>30000.0</item>
+    </array>
+</resources>
