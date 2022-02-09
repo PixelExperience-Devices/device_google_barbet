@@ -55,7 +55,25 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
 PRODUCT_MANUFACTURER := Google
-PRODUCT_BRAND := Android
+PRODUCT_BRAND := google
 PRODUCT_NAME := aosp_barbet
 PRODUCT_DEVICE := barbet
-PRODUCT_MODEL := AOSP on barbet
+PRODUCT_MODEL := Pixel 5a
+
+# Inherit some common PixelExperience stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+include device/google/barbet/device-custom.mk
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_WIDTH := 1080
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_PRODUCT=barbet \
+    PRIVATE_BUILD_DESC="barbet-user 12 SQ1A.220105.002 7961164 release-keys"
+
+BUILD_FINGERPRINT := google/barbet/barbet:12/SQ1A.220105.002/7961164:user/release-keys
+
+$(call inherit-product, vendor/google/barbet/barbet-vendor.mk)
+
