@@ -9,5 +9,10 @@
     "target_path": "vendor/google/barbet",
     "branch": "twelve",
     "remote": "pixel-devices-blobs"
+  },
+  {
+    "repository": "kernel_google_barbet",
+    "target_path": "kernel/google/barbet",
+    "branch": "twelve"
   }
 ]

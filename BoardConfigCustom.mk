@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Kernel
+TARGET_KERNEL_SOURCE := kernel/google/barbet
+
 # Add before redbull BoardConfigCustom.mk
 BOOT_KERNEL_MODULES += ftm5.ko
 
